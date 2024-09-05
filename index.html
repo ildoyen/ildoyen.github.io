@@ -7,7 +7,15 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <title>ildoyen</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <style>
         body {
             background-color: rgb(227, 255, 247);
@@ -25,8 +33,32 @@
         }
 
         .style1 {
-            font-size: 24px;
+            font-size: 20px;
             font-family: serif;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-family: "Mulish", sans-serif;
+            font-optical-sizing: auto;
+
+        }
+
+        .style1 a:link,
+        .style1 a:visited {
+            background-color: #f7eea07f;
+            color: #2d4c60;
+            padding: 10px 100px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px #2d4c60;
+        }
+
+        .style1 a:hover,
+        .style1 a:active {
+            background-color: #f7eea0;
+            border-radius: 10px;
         }
 
         .main {
@@ -34,6 +66,10 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+        }
+
+        .counter {
+            text-align: right;
         }
     </style>
 </head>
@@ -46,11 +82,18 @@
         <img src="./dogangry.PNG" width="45px" />
     </marquee>
 
+
     <div class="main">
         <div class="block">
             <header>
 
-                <img src="./peach.png?v=1" width="300px" />
+                <div class="counter">
+
+                    <a href="https://www.stylemap.co.jp/"><img src="https://www.f-counter.net/j/64/1725541767/"
+                            alt="アクセスカウンター"></a>
+                    <img src="./upset.png" width="40px" />
+                </div>
+                <img src="./peach.png" width="300px" />
             </header>
             <div class="data-wrap">
 
@@ -61,7 +104,12 @@
                 </p>
 
                 <ul class="style1">
-                    <li><a href="https://www.instagram.com/ildoyen" target="_blank">Instagram</a></li>
+                    <li style="width: 100%; text-align: center;">
+                        <a href="https://www.instagram.com/ildoyen" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                            Instagram
+                        </a>
+                    </li>
                 </ul>
 
             </div>
