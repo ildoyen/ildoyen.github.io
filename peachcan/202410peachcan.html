@@ -27,6 +27,13 @@
             margin: 0;
         }
 
+        a.my-under-line:hover  {
+            text-decoration: underline;
+            text-decoration-line: underline;
+            text-decoration-thickness: 5px;
+            text-decoration-color: #dda8a8;
+        }
+
     </style>
 </head>
 
@@ -44,10 +51,10 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent" data-bs-theme="light">
+                <div class="z-3 collapse navbar-collapse" id="navbarSupportedContent" data-bs-theme="light">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">can</a>
+                            <a class="nav-link my-under-line" aria-current="page" href="../index.html" title="peach">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
@@ -74,10 +81,10 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-8" style="padding-left: 1rem; padding-right: 1rem;">
-                    <div class="card mb-3">
+                    <div class="card mb-3" style="z-index: -999;">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="./images/sky.jpeg" class="img-fluid rounded-start" alt="...">
+                                <img src="./images/sky.jpeg" class="img-fluid rounded-start" alt="..." >
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body" id="20241019-1">
