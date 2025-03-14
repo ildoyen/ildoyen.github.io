@@ -4,7 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>水蜜桃可以 ::: can</title>
-    <meta http-equiv="refresh" content="2.5; url=202411peachcan.html" />
+    <script>
+            // 檢查是否是從其他頁面返回
+            window.onpageshow = function(event) {
+                if (event.persisted) {
+                    // 如果是從快取加載的頁面，重新執行跳轉
+                    window.location.href = 'index.html';
+                } else {
+                    // 首次載入頁面時的跳轉
+                    setTimeout(function() {
+                        window.location.href = '202411peachcan.html';
+                    }, 2500);
+                }
+            };
+    </script>
 </head>
 <body style="margin: 0; min-height: 100vh; display: flex; justify-content: center; align-items: center;">
     <div style="text-align: center;">
